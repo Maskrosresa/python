@@ -39,3 +39,14 @@ def discounted(price, discount):
     return(price*(1-discount/100))
 
 print('Original price: $' + str(price), "Discounted Price: $" + str(discounted(price,discount)))
+
+
+
+############
+#check if price in pesos or dollars is cheaper
+peso_price = int(input()) #input peso amount
+dollar_price = int(input()) #input dollar amount
+convert_peso = (peso_price * .02) #convert pesos to dollars
+if convert_peso < dollar_price: #if converted pesos are smaller than dollars
+    print("Pesos") #print peso
+else: print("Dollars") #otherwise, print dollars
