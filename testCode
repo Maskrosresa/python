@@ -50,3 +50,12 @@ convert_peso = (peso_price * .02) #convert pesos to dollars
 if convert_peso < dollar_price: #if converted pesos are smaller than dollars
     print("Pesos") #print peso
 else: print("Dollars") #otherwise, print dollars
+
+
+##########
+
+#create a countdown timer
+number = int(input()) #input as integer
+while number >= 0: # while number is greater than or equal to zero
+    print(number) # print zero
+    number = number - 1 #make number one smaller
