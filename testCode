@@ -1,0 +1,41 @@
+#creating a function to calculate shipping cost from weight
+weight = int(input()) #input weight converted to int
+
+#define the function
+def shipping_cost():
+    print(weight * 5)
+
+#function call
+shipping_cost()
+
+###########
+
+#create a hashtag
+word = input()
+
+def hashtag():
+    return '#' + word
+
+#display results
+print(hashtag())
+
+
+########
+
+#find the location of the letter
+
+word = 'motorbike'
+print(word.find('r'))
+
+
+
+#######
+
+#create a function to determine discount price
+price = int(input()) # input function that changes input to int type
+discount = 2
+
+def discounted(price, discount):
+    return(price*(1-discount/100))
+
+print('Original price: $' + str(price), "Discounted Price: $" + str(discounted(price,discount)))
