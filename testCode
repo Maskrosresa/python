@@ -9,7 +9,6 @@ def shipping_cost():
 shipping_cost()
 
 ###########
-
 #create a hashtag
 word = input()
 
@@ -21,7 +20,6 @@ print(hashtag())
 
 
 ########
-
 #find the location of the letter
 
 word = 'motorbike'
@@ -30,7 +28,6 @@ print(word.find('r'))
 
 
 #######
-
 #create a function to determine discount price
 price = int(input()) # input function that changes input to int type
 discount = 2
@@ -39,7 +36,6 @@ def discounted(price, discount):
     return(price*(1-discount/100))
 
 print('Original price: $' + str(price), "Discounted Price: $" + str(discounted(price,discount)))
-
 
 
 ############
@@ -53,9 +49,18 @@ else: print("Dollars") #otherwise, print dollars
 
 
 ##########
-
 #create a countdown timer
 number = int(input()) #input as integer
 while number >= 0: # while number is greater than or equal to zero
     print(number) # print zero
     number = number - 1 #make number one smaller
+
+##############
+#cells double each day
+goal_days = int(input())
+cells = int(input())
+current_day = 1
+while (goal_days >= current_day):
+    print('Day', current_day, ':' , cells)
+    current_day = current_day +1
+    cells = cells * 2 # move this to above print if you want it to double on the first day instead of after the first day
